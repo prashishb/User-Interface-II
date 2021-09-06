@@ -303,7 +303,6 @@ footer {
   background-color: #292c2f;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   padding: 2%;
   margin: 2% 0;
 }
@@ -316,12 +315,10 @@ footer a {
 .copyright,
 .contact-button,
 .social-container {
-  width: 30%;
-}
-
-.copyright {
+  width: 100%;
+  margin: 1% auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .copyright p {
@@ -329,14 +326,9 @@ footer a {
   font-size: 2rem;
 }
 
-.contact-button {
-  display: flex;
-  justify-content: center;
-}
-
 nav.social {
   display: flex;
-  justify-content: flex-end;
+  flex-flow: row wrap;
 }
 
 nav.social i {
@@ -406,5 +398,10 @@ nav.social i {
 
   .gallery-home div {
     width: 45%;
+  }
+
+  footer {
+    flex-flow: column wrap;
+    align-items: center;
   }
 }
