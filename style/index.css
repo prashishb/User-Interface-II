@@ -358,7 +358,7 @@ nav.social i {
 .main {
   width: 100%;
   display: flex;
-  margin: auto;
+  margin: 5% auto;
   padding: 0 5%;
   padding-bottom: 5%;
 }
