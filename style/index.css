@@ -255,19 +255,19 @@ header .logo {
 
 div .hide {
   width: 70%;
-  height: 10vh;
+  height: 8vw;
   background-color: #333;
   opacity: 0.75;
   display: none;
 }
 
 div .hide h2 {
-  font-size: 4rem;
+  font-size: 2.5vw;
   color: #fff;
 }
 
 div .hide p {
-  font-size: 2rem;
+  font-size: 1.5vw;
   color: #fff;
 }
 
