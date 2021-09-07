@@ -341,7 +341,7 @@ nav.social i {
 .main {
   width: 100%;
   display: flex;
-  margin: 5% auto;
+  margin: 6% auto;
   padding: 0 5%;
   padding-bottom: 5%;
 }
@@ -352,7 +352,7 @@ nav.social i {
   background-repeat: no-repeat;
   background-position: center;
   width: 50%;
-  height: 100vh;
+  height: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,7 +361,7 @@ nav.social i {
 
 .hero h1 {
   text-align: left;
-  font-size: 10rem;
+  font-size: 8vw;
   color: #fff;
   text-shadow: 2px 2px 4px #333;
 }
@@ -399,6 +399,10 @@ nav.social i {
     width: 45%;
   }
 
+  .main {
+    margin: 30% auto;
+  }
+
   footer {
     flex-flow: column wrap;
     align-items: center;
@@ -414,5 +418,20 @@ nav.social i {
 
   .copyright {
     order: 2;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .gallery-home div {
+    width: 90%;
+  }
+
+  .main {
+    flex-flow: column wrap;
+  }
+
+  .hero, .right-box {
+    width: 100%;
   }
 }
