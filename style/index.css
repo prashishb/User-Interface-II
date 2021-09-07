@@ -403,4 +403,16 @@ nav.social i {
     flex-flow: column wrap;
     align-items: center;
   }
+
+  .contact-button {
+    order: 0;
+  }
+
+  .social-container {
+    order: 1;
+  }
+
+  .copyright {
+    order: 2;
+  }
 }
