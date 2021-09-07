@@ -1,1 +1,437 @@
-/* Add CSS styling here */
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* remember to define focus styles! */
+
+:focus {
+  outline: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+/* tables still need cellspacing="0" in the markup */
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+/* End CSS Reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  color: #333333;
+  /* border: 1px solid grey; */
+}
+
+/* General Styles */
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 2%;
+  letter-spacing: 0.2em;
+}
+
+.btn.big {
+  line-height: 3.5;
+}
+
+.btn.small {
+  line-height: 1.5;
+}
+
+.btn:hover {
+  border: 2px solid #fff;
+  background: #fff;
+  color: #1f1f1f;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+/* End General Styles */
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 2% auto;
+  width: 85%;
+}
+
+header .logo {
+  font-size: 2.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-btn {
+  font-size: 2.5rem;
+}
+
+.nav-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-inv {
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.container {
+  height: 90vh;
+  margin: 4% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1521489871110-81dc5a61dbda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container h1 {
+  color: #fff;
+}
+
+/* project gallery styling */
+
+.gallery-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.gallery-home div {
+  width: 30%;
+  height: 40vh;
+  margin: 2% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.proj {
+  background-image: url(https://picsum.photos/900/900?grayscale);
+}
+
+div .hide {
+  width: 70%;
+  height: 8vw;
+  background-color: #333;
+  opacity: 0.75;
+  display: none;
+}
+
+div .hide h2 {
+  font-size: 2.5vw;
+  color: #fff;
+}
+
+div .hide p {
+  font-size: 1.5vw;
+  color: #fff;
+}
+
+div:hover .hide {
+  display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.gallery div {
+  width: 40%;
+  height: 40vh;
+  margin: 4% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: #292c2f;
+  width: 100%;
+  display: flex;
+  padding: 2%;
+  margin: 2% 0;
+}
+
+footer a {
+  color: white;
+  font-size: 2rem;
+}
+
+.copyright,
+.contact-button,
+.social-container {
+  width: 100%;
+  margin: 1% auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.copyright p {
+  color: white;
+  font-size: 2rem;
+}
+
+nav.social {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+nav.social i {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 1em;
+}
+
+/* ABout Me Page */
+
+.main {
+  width: 100%;
+  display: flex;
+  margin: 6% auto;
+  padding: 0 5%;
+  padding-bottom: 5%;
+}
+
+.hero {
+  background-image: url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero h1 {
+  text-align: left;
+  font-size: 8vw;
+  color: #fff;
+  text-shadow: 2px 2px 4px #333;
+}
+
+.right-box {
+  width: 50%;
+  margin-left: 2%;
+}
+
+.right-box h2 {
+  font-size: 6rem;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.right-box p {
+  font-size: 2.5rem;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 800px) {
+
+  header nav {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .links {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .gallery-home div {
+    width: 45%;
+  }
+
+  .main {
+    margin: 30% auto;
+  }
+
+  footer {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .contact-button {
+    order: 0;
+  }
+
+  .social-container {
+    order: 1;
+  }
+
+  .copyright {
+    order: 2;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .gallery-home div {
+    width: 90%;
+  }
+
+  .main {
+    flex-flow: column wrap;
+  }
+
+  .hero, .right-box {
+    width: 100%;
+  }
+}
